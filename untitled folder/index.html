@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HEIC to JPG Converter</title>
+    <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0; background-color: #f5f5f7; color: #1d1d1f; }
+        .container { text-align: center; background: white; padding: 40px; border-radius: 18px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+        h1 { font-size: 24px; margin-bottom: 20px; }
+        input[type="file"] { margin-bottom: 20px; }
+        button { background-color: #007aff; color: white; border: none; padding: 12px 24px; border-radius: 12px; font-size: 16px; cursor: pointer; transition: background-color 0.2s; }
+        button:hover { background-color: #005ecb; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Convert HEIC to JPG</h1>
+        <p>Designed for iOS and macOS users</p>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+            <input type="file" name="heicfile" accept=".heic,.heif" required>
+            <br>
+            <button type="submit">Convert and Download</button>
+        </form>
+    </div>
+</body>
+</html>
